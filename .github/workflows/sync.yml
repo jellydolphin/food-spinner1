@@ -1,0 +1,34 @@
+name: Sync Tencent Doc Data
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - run: npm install
+
+      - run: npx playwright install chromium
+
+      - run: node sync.js
+
+      - name: Commit data.json
+        run: |
+          git config user.name "food-spinner-bot"
+          git config user.email "bot@food-spinner.local"
+          git add data.json
+          git diff --cached --quiet || git commit -m "auto sync"
+          git push
