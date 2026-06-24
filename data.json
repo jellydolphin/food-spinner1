@@ -1,7 +1,7 @@
 {
-  "updated": 1782277741705,
+  "updated": 1782303436792,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 33,
+  "count": 38,
   "foods": [
     {
       "id": "s1",
@@ -299,6 +299,51 @@
       "type": "无主食",
       "diet": "normal",
       "note": ""
+    },
+    {
+      "id": "s34",
+      "name": "米国煲仔饭",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": "香香的"
+    },
+    {
+      "id": "s35",
+      "name": "羊肉泡馍",
+      "emoji": "🫓",
+      "source": "西北门揽胜汇附近",
+      "type": "饼/馍",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s36",
+      "name": "奖励自己一杯奶茶",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s37",
+      "name": "袁记水饺",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s38",
+      "name": "KFC",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "normal",
+      "note": "香香的 热辣香骨鸡"
     }
   ]
 }
