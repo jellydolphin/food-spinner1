@@ -1,0 +1,304 @@
+{
+  "updated": 1782277741705,
+  "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
+  "count": 33,
+  "foods": [
+    {
+      "id": "s1",
+      "name": "甜玉米+鸡蛋",
+      "emoji": "🌽",
+      "source": "桃园",
+      "type": "粗粮",
+      "diet": "diet",
+      "note": "桃二卖包子那里"
+    },
+    {
+      "id": "s2",
+      "name": "荟一健康餐",
+      "emoji": "🍚",
+      "source": "荟园",
+      "type": "饭",
+      "diet": "diet",
+      "note": "牛肉超级好吃呀"
+    },
+    {
+      "id": "s3",
+      "name": "桃园轻食",
+      "emoji": "🥗",
+      "source": "桃园",
+      "type": "轻食",
+      "diet": "diet",
+      "note": ""
+    },
+    {
+      "id": "s4",
+      "name": "瘦肉猪肝粉",
+      "emoji": "🍜",
+      "source": "桃园",
+      "type": "粉",
+      "diet": "diet",
+      "note": "桃一鸡汤粉面那里"
+    },
+    {
+      "id": "s5",
+      "name": "悦轻肴",
+      "emoji": "🥗",
+      "source": "荟园小站",
+      "type": "轻食",
+      "diet": "diet",
+      "note": "荟园小站"
+    },
+    {
+      "id": "s6",
+      "name": "牛肉拉面",
+      "emoji": "🍝",
+      "source": "竹苑",
+      "type": "面",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s7",
+      "name": "麦当劳穷鬼套餐",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "diet",
+      "note": "双吉+玉米杯"
+    },
+    {
+      "id": "s8",
+      "name": "生烫牛肉面/粉",
+      "emoji": "🍝",
+      "source": "西苑",
+      "type": "面",
+      "diet": "normal",
+      "note": "牛肉/柴鱼/猪肝任选"
+    },
+    {
+      "id": "s9",
+      "name": "赛百味",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "diet",
+      "note": ""
+    },
+    {
+      "id": "s10",
+      "name": "凉拌菜+鸭腿",
+      "emoji": "🥬",
+      "source": "步行街",
+      "type": "无主食",
+      "diet": "normal",
+      "note": "一点点旁边，虽然没有主食但是高盐高钠，好吃但会储水噢"
+    },
+    {
+      "id": "s11",
+      "name": "潮汕粿条",
+      "emoji": "🍜",
+      "source": "步行街",
+      "type": "粉",
+      "diet": "diet",
+      "note": ""
+    },
+    {
+      "id": "s12",
+      "name": "鸡柳大人",
+      "emoji": "🥬",
+      "source": "步行街",
+      "type": "无主食",
+      "diet": "normal",
+      "note": "中份三合一大概600卡吧"
+    },
+    {
+      "id": "s13",
+      "name": "锅盔+鸡蛋",
+      "emoji": "🫓",
+      "source": "步行街",
+      "type": "饼/馍",
+      "diet": "normal",
+      "note": "估计400卡，鸡蛋用来补充蛋白质"
+    },
+    {
+      "id": "s14",
+      "name": "羊杂面",
+      "emoji": "🍝",
+      "source": "荟园小站",
+      "type": "面",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s15",
+      "name": "肥牛煲",
+      "emoji": "🍚",
+      "source": "荟园",
+      "type": "饭",
+      "diet": "normal",
+      "note": "荟三"
+    },
+    {
+      "id": "s16",
+      "name": "烤鸭饭",
+      "emoji": "🍚",
+      "source": "桃园",
+      "type": "饭",
+      "diet": "normal",
+      "note": "桃一"
+    },
+    {
+      "id": "s17",
+      "name": "过油肉拌面",
+      "emoji": "🍝",
+      "source": "荟园",
+      "type": "面",
+      "diet": "normal",
+      "note": "荟一"
+    },
+    {
+      "id": "s18",
+      "name": "鸡公煲",
+      "emoji": "🍚",
+      "source": "桃园",
+      "type": "饭",
+      "diet": "normal",
+      "note": "桃二"
+    },
+    {
+      "id": "s19",
+      "name": "烧鸭煲",
+      "emoji": "🍚",
+      "source": "桃园",
+      "type": "饭",
+      "diet": "normal",
+      "note": "桃二，好多胡萝卜"
+    },
+    {
+      "id": "s20",
+      "name": "鸡丝拌面",
+      "emoji": "🍝",
+      "source": "桃园",
+      "type": "面",
+      "diet": "normal",
+      "note": "桃一，没蔬菜"
+    },
+    {
+      "id": "s21",
+      "name": "荠菜馄饨",
+      "emoji": "🍽️",
+      "source": "西苑",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s22",
+      "name": "炸饺子",
+      "emoji": "🍽️",
+      "source": "西苑",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": "脆脆的"
+    },
+    {
+      "id": "s23",
+      "name": "黄焖鸡",
+      "emoji": "🍚",
+      "source": "桃园",
+      "type": "饭",
+      "diet": "normal",
+      "note": "桃一"
+    },
+    {
+      "id": "s24",
+      "name": "牛筋粉",
+      "emoji": "🍜",
+      "source": "荟园",
+      "type": "粉",
+      "diet": "normal",
+      "note": "荟三，去晚了就没了"
+    },
+    {
+      "id": "s25",
+      "name": "番茄牛腩拉面",
+      "emoji": "🍝",
+      "source": "桃园",
+      "type": "面",
+      "diet": "normal",
+      "note": "桃二，加青菜"
+    },
+    {
+      "id": "s26",
+      "name": "番茄小馄饨",
+      "emoji": "🍽️",
+      "source": "竹苑",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s27",
+      "name": "肉丝炒面",
+      "emoji": "🍝",
+      "source": "荟园",
+      "type": "面",
+      "diet": "normal",
+      "note": "湿湿的"
+    },
+    {
+      "id": "s28",
+      "name": "肉丝炒面",
+      "emoji": "🍝",
+      "source": "竹苑",
+      "type": "面",
+      "diet": "normal",
+      "note": "干干的"
+    },
+    {
+      "id": "s29",
+      "name": "干煸炒面",
+      "emoji": "🍝",
+      "source": "橘园",
+      "type": "面",
+      "diet": "normal",
+      "note": "好多韭菜，肉少"
+    },
+    {
+      "id": "s30",
+      "name": "肉丝鸡蛋炒饭",
+      "emoji": "🍚",
+      "source": "荟园",
+      "type": "饭",
+      "diet": "normal",
+      "note": "荟一，可以用老干妈酱炒，有银耳或者粥送"
+    },
+    {
+      "id": "s31",
+      "name": "肠粉",
+      "emoji": "🫓",
+      "source": "荟园",
+      "type": "饼/馍",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s32",
+      "name": "桂林米粉",
+      "emoji": "🍜",
+      "source": "步行街",
+      "type": "粉",
+      "diet": "normal",
+      "note": "周六不上班"
+    },
+    {
+      "id": "s33",
+      "name": "烤鸭卷+瘦肉丸",
+      "emoji": "🥬",
+      "source": "步行街",
+      "type": "无主食",
+      "diet": "normal",
+      "note": ""
+    }
+  ]
+}
