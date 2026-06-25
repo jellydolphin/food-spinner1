@@ -1,7 +1,7 @@
 {
-  "updated": 1782400436575,
+  "updated": 1782412573633,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 56,
+  "count": 63,
   "foods": [
     {
       "id": "s1",
@@ -506,6 +506,69 @@
       "type": "饭",
       "diet": "normal",
       "note": ""
+    },
+    {
+      "id": "s57",
+      "name": "水果捞",
+      "emoji": "🥬",
+      "source": "步行街",
+      "type": "无主食",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s58",
+      "name": "豌杂面",
+      "emoji": "🍝",
+      "source": "步行街",
+      "type": "面",
+      "diet": "normal",
+      "note": "重庆小面家的"
+    },
+    {
+      "id": "s59",
+      "name": "醉得意",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": "爱吃手撕包菜"
+    },
+    {
+      "id": "s60",
+      "name": "油泼面",
+      "emoji": "🍝",
+      "source": "步行街",
+      "type": "面",
+      "diet": "normal",
+      "note": "步行街油泼面"
+    },
+    {
+      "id": "s61",
+      "name": "咖喱炒饭",
+      "emoji": "🍚",
+      "source": "橘园",
+      "type": "饭",
+      "diet": "normal",
+      "note": "橘园卖包子那个窗口，建议加鸡腿，鸡腿特别入味贼好吃"
+    },
+    {
+      "id": "s62",
+      "name": "龙哥麻辣烫",
+      "emoji": "🍽️",
+      "source": "荟园小站",
+      "type": "其他",
+      "diet": "normal",
+      "note": "炸串也好吃"
+    },
+    {
+      "id": "s63",
+      "name": "小花猪猪脚饭",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "酸菜和辣椒酱好吃"
     }
   ]
 }
