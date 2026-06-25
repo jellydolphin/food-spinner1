@@ -844,25 +844,26 @@ function formatTime(ts) {
 
 async function checkForUpdates() {
   try {
-    const resp = await fetch('data.json?t=' + Date.now());
+    const resp = await fetch('data.json?v=' + Date.now(), { cache: 'no-store' });
     if (!resp.ok) throw new Error('not found');
     const json = await resp.json();
     if (json.updated && json.foods && json.foods.length > 0) {
-      // Merge: keep user's filter/excluded state, update food list
       const newFoods = json.foods;
-      if (JSON.stringify(newFoods) !== JSON.stringify(ALL_FOODS)) {
+      const changed = JSON.stringify(newFoods) !== JSON.stringify(ALL_FOODS);
+      if (changed) {
         // Data has changed - update
         ALL_FOODS.length = 0;
         newFoods.forEach(f => ALL_FOODS.push(f));
         lastSyncTime = json.updated;
         excludedIds.clear();
         refreshAll();
+        showToast(`已更新 ${newFoods.length} 条菜品数据`);
         console.log('Data synced at', formatTime(lastSyncTime));
+      } else {
+        lastSyncTime = json.updated || lastSyncTime;
       }
-      lastSyncTime = json.updated || lastSyncTime;
     }
   } catch(e) {
-    // No data.json yet, use hardcoded data
     if (!lastSyncTime) lastSyncTime = Date.now();
   }
   document.getElementById('syncTime').textContent = lastSyncTime
@@ -878,6 +879,20 @@ function manualRefresh() {
       document.getElementById('syncTime').textContent = '更新于 ' + ts;
     }
   });
+}
+
+// Toast notification
+function showToast(msg) {
+  let toast = document.getElementById('toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toast';
+    toast.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:rgba(45,45,45,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;padding:10px 20px;border-radius:12px;font-size:13px;z-index:999;opacity:0;transition:opacity 0.3s;pointer-events:none;white-space:nowrap;box-shadow:0 4px 20px rgba(0,0,0,0.15);';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  setTimeout(() => { toast.style.opacity = '0'; }, 2500);
 }
 
 // Poll for updates every hour
