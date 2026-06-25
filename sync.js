@@ -70,30 +70,24 @@ function autoEmoji(type) { return EMOJI_MAP[type] || '🍽️'; }
       foods,
     };
 
-    // Compare with existing data.json - only write if food data actually changed
-    let shouldWrite = true;
+    // Check if food data actually changed (for logging)
     if (fs.existsSync(OUTPUT)) {
       try {
         const old = JSON.parse(fs.readFileSync(OUTPUT, 'utf-8'));
         const oldFoods = JSON.stringify(old.foods || []);
         const newFoods = JSON.stringify(foods);
         if (oldFoods === newFoods) {
-          shouldWrite = false;
-          console.log(`⏭️  数据未变化（${foods.length} 条），跳过写入`);
+          console.log(`⏭️  食物数据未变化（${foods.length} 条），仅更新时间戳`);
         } else {
-          console.log(`📝 数据有变化: ${old.count || 0} → ${foods.length} 条`);
+          console.log(`📝 食物数据有变化: ${old.count || 0} → ${foods.length} 条`);
         }
       } catch(e) {
-        console.log('⚠️  旧数据解析失败，将直接写入');
+        console.log('⚠️  旧数据解析失败，直接写入');
       }
     }
 
-    if (shouldWrite) {
-      fs.writeFileSync(OUTPUT, JSON.stringify(output, null, 2), 'utf-8');
-      console.log(`✅ Synced ${foods.length} foods to data.json`);
-    } else {
-      console.log('✅ 数据已是最新，无需更新');
-    }
+    fs.writeFileSync(OUTPUT, JSON.stringify(output, null, 2), 'utf-8');
+    console.log(`✅ Synced ${foods.length} foods to data.json`);
   } catch (e) {
     console.error('❌ Scrape failed:', e.message);
     process.exit(1);
