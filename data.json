@@ -1,7 +1,7 @@
 {
-  "updated": 1782431798368,
+  "updated": 1782472888638,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 63,
+  "count": 95,
   "foods": [
     {
       "id": "s1",
@@ -569,6 +569,294 @@
       "type": "饭",
       "diet": "normal",
       "note": "酸菜和辣椒酱好吃"
+    },
+    {
+      "id": "s64",
+      "name": "杨国福麻辣烫",
+      "emoji": "🍽️",
+      "source": "步行街",
+      "type": "其他",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s65",
+      "name": "烧卤家族",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "梧桐广场二楼，酱香鸡很美味"
+    },
+    {
+      "id": "s66",
+      "name": "朱家小馆",
+      "emoji": "🍝",
+      "source": "荟园小站",
+      "type": "面",
+      "diet": "normal",
+      "note": "除了羊杂面其他都不错"
+    },
+    {
+      "id": "s67",
+      "name": "铁板焦饭",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "梧桐广场一楼"
+    },
+    {
+      "id": "s68",
+      "name": "楚十一泡饭局",
+      "emoji": "🍽️",
+      "source": "财大小吃街",
+      "type": "其他",
+      "diet": "normal",
+      "note": "漂亮饭，也很好吃"
+    },
+    {
+      "id": "s69",
+      "name": "徐小双·铁锅豆花鸡",
+      "emoji": "🍽️",
+      "source": "财大小吃街",
+      "type": "其他",
+      "diet": "normal",
+      "note": "抹茶奶豆腐非常好吃"
+    },
+    {
+      "id": "s70",
+      "name": "夸父炸串",
+      "emoji": "🍽️",
+      "source": "步行街",
+      "type": "其他",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s71",
+      "name": "五谷渔粉",
+      "emoji": "🍜",
+      "source": "步行街",
+      "type": "粉",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s72",
+      "name": "牛扒饭河南烩面",
+      "emoji": "🍝",
+      "source": "步行街",
+      "type": "面",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s73",
+      "name": "成都干锅",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "梧桐广场二楼"
+    },
+    {
+      "id": "s74",
+      "name": "旋转小火锅",
+      "emoji": "🍽️",
+      "source": "步行街",
+      "type": "其他",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s75",
+      "name": "潮汕汤粉",
+      "emoji": "🍜",
+      "source": "步行街",
+      "type": "粉",
+      "diet": "normal",
+      "note": "梧桐广场一楼"
+    },
+    {
+      "id": "s76",
+      "name": "擂椒饭",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "梧桐广场二楼"
+    },
+    {
+      "id": "s77",
+      "name": "郑恩强麻辣烫",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s78",
+      "name": "桃园自选",
+      "emoji": "🍚",
+      "source": "桃园",
+      "type": "饭",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s79",
+      "name": "轻食煮义",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "diet",
+      "note": "梧桐广场二楼，鸡胸谷物饭性价比巨高，疯狂摄入蛋白质"
+    },
+    {
+      "id": "s80",
+      "name": "龙哥麻辣烫",
+      "emoji": "🍽️",
+      "source": "荟园小站",
+      "type": "其他",
+      "diet": "normal",
+      "note": "喜欢酸辣拌或者番茄味的"
+    },
+    {
+      "id": "s81",
+      "name": "小锅猪肚鸡",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": "个人喜欢胡椒味的"
+    },
+    {
+      "id": "s82",
+      "name": "桃巡巴斯克",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": "流心的"
+    },
+    {
+      "id": "s83",
+      "name": "轻线条希腊酸奶碗",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "diet",
+      "note": "可以自己DIY"
+    },
+    {
+      "id": "s84",
+      "name": "海底捞番茄滑牛肉捞饭",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": "yummy"
+    },
+    {
+      "id": "s85",
+      "name": "荟三牛肉面",
+      "emoji": "🍝",
+      "source": "荟园",
+      "type": "面",
+      "diet": "normal",
+      "note": "不许任何人忤逆空心粉"
+    },
+    {
+      "id": "s86",
+      "name": "橘园刀削面",
+      "emoji": "🍝",
+      "source": "橘园",
+      "type": "面",
+      "diet": "normal",
+      "note": "素刀削是土豆！配上酱香饼好幸福"
+    },
+    {
+      "id": "s87",
+      "name": "圣记云吞王",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": "个头大但是数量有点少"
+    },
+    {
+      "id": "s88",
+      "name": "TINYZOO厚蛋烧",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "diet",
+      "note": "美味"
+    },
+    {
+      "id": "s89",
+      "name": "木多森健康菜",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "diet",
+      "note": "很健康的饭和菜"
+    },
+    {
+      "id": "s90",
+      "name": "私町寿司",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": "😋"
+    },
+    {
+      "id": "s91",
+      "name": "金汤渔捞粉",
+      "emoji": "🍜",
+      "source": "桃园",
+      "type": "粉",
+      "diet": "normal",
+      "note": "喜欢"
+    },
+    {
+      "id": "s92",
+      "name": "襄帅拌粉",
+      "emoji": "🍜",
+      "source": "桃园",
+      "type": "粉",
+      "diet": "normal",
+      "note": "经常点的是酱香鸡拌粉和奥尔良鸡块拌粉"
+    },
+    {
+      "id": "s93",
+      "name": "朝鲜冷面",
+      "emoji": "🍝",
+      "source": "荟园小站",
+      "type": "面",
+      "diet": "normal",
+      "note": "冰冰凉凉很适合夏天，but有点酸"
+    },
+    {
+      "id": "s94",
+      "name": "老街烧烤",
+      "emoji": "🍽️",
+      "source": "步行街",
+      "type": "其他",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s95",
+      "name": "馄饨",
+      "emoji": "🍽️",
+      "source": "荟园",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": "在荟园一楼叫啥我不记得了反正很便宜也很好吃"
     }
   ]
 }
