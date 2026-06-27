@@ -111,12 +111,35 @@ body::after {
   position: relative; z-index: 1;
 }
 
-.filter-step { margin-bottom: 14px; }
+.filter-step { margin-bottom: 14px; position: relative; }
 .filter-step:last-child { margin-bottom: 0; }
+.filter-step-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 8px;
+}
 .filter-label {
   font-size: 10px; font-weight: 700;
   color: var(--text-light); letter-spacing: 1.5px;
-  text-transform: uppercase; margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.select-all-btn {
+  font-size: 11px; font-weight: 500;
+  color: var(--blue); cursor: pointer;
+  background: rgba(123,156,224,0.10);
+  border: 1px solid rgba(123,156,224,0.18);
+  border-radius: 10px;
+  padding: 3px 10px;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+  transition: all 0.2s;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.select-all-btn:active { transform: scale(0.93); }
+.select-all-btn.all-active {
+  color: var(--pink);
+  background: rgba(226,146,168,0.10);
+  border-color: rgba(226,146,168,0.18);
 }
 .filter-pills { display: flex; flex-wrap: wrap; gap: 8px; }
 
@@ -678,6 +701,47 @@ function renderFilters() {
   ).join('');
   document.getElementById('stepDot2').classList.toggle('done', filterSources.size > 0);
   document.getElementById('stepDot3').classList.toggle('done', filterTypes.size > 0);
+  updateSelectAllButtons();
+}
+
+function updateSelectAllButtons() {
+  // Source button
+  let srcBtn = document.getElementById('sourceSelectAll');
+  if (!srcBtn) {
+    const srcStep = document.getElementById('sourcePills').parentElement;
+    const label = srcStep.querySelector('.filter-label');
+    const header = document.createElement('div');
+    header.className = 'filter-step-header';
+    label.replaceWith(header);
+    header.appendChild(label);
+    srcBtn = document.createElement('button');
+    srcBtn.id = 'sourceSelectAll';
+    srcBtn.className = 'select-all-btn';
+    header.appendChild(srcBtn);
+    srcBtn.onclick = toggleAllSources;
+  }
+  const allSrc = filterSources.size === SOURCE_OPTIONS.length;
+  srcBtn.textContent = allSrc ? '取消' : '全选';
+  srcBtn.classList.toggle('all-active', allSrc);
+
+  // Type button
+  let typeBtn = document.getElementById('typeSelectAll');
+  if (!typeBtn) {
+    const typeStep = document.getElementById('typePills').parentElement;
+    const label = typeStep.querySelector('.filter-label');
+    const header = document.createElement('div');
+    header.className = 'filter-step-header';
+    label.replaceWith(header);
+    header.appendChild(label);
+    typeBtn = document.createElement('button');
+    typeBtn.id = 'typeSelectAll';
+    typeBtn.className = 'select-all-btn';
+    header.appendChild(typeBtn);
+    typeBtn.onclick = toggleAllTypes;
+  }
+  const allType = filterTypes.size === TYPE_OPTIONS.length;
+  typeBtn.textContent = allType ? '取消' : '全选';
+  typeBtn.classList.toggle('all-active', allType);
 }
 
 function renderSummary() {
@@ -746,6 +810,28 @@ function toggleType(k) {
 function resetFilters() { if(spinning) return;
   filterDiet='normal'; filterSources=new Set(['桃园','荟园','荟园小站','竹苑','外卖','西苑','步行街','橘园']);
   filterTypes=new Set(['粗粮','饭','轻食','粉','面','汉堡/三明治','无主食','饼/馍','饺子/馄饨']);
+  excludedIds.clear(); refreshAll();
+}
+function toggleAllSources() { if(spinning) return;
+  if (filterSources.size === SOURCE_OPTIONS.length) {
+    // Cancel all → keep only the first one
+    filterSources.clear();
+    filterSources.add(SOURCE_OPTIONS[0].key);
+  } else {
+    // Select all
+    SOURCE_OPTIONS.forEach(o => filterSources.add(o.key));
+  }
+  excludedIds.clear(); refreshAll();
+}
+function toggleAllTypes() { if(spinning) return;
+  if (filterTypes.size === TYPE_OPTIONS.length) {
+    // Cancel all → keep only the first one
+    filterTypes.clear();
+    filterTypes.add(TYPE_OPTIONS[0].key);
+  } else {
+    // Select all
+    TYPE_OPTIONS.forEach(o => filterTypes.add(o.key));
+  }
   excludedIds.clear(); refreshAll();
 }
 function toggleExclude(id) { if(spinning) return;
