@@ -1,7 +1,7 @@
 {
-  "updated": 1782776371254,
+  "updated": 1782819038915,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 97,
+  "count": 99,
   "foods": [
     {
       "id": "s1",
@@ -875,6 +875,24 @@
       "type": "其他",
       "diet": "diet",
       "note": "小象超市"
+    },
+    {
+      "id": "s99",
+      "name": "匠心卤",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "非常有味道的饭，可以双拼三拼"
+    },
+    {
+      "id": "s100",
+      "name": "咖喱朵朵",
+      "emoji": "🥗",
+      "source": "橘园",
+      "type": "轻食",
+      "diet": "diet",
+      "note": "在原来甲哺甲哺旁边 慕玛披萨原址，价格和食堂与步行街轻食相似，味道蛮不错的"
     }
   ]
 }
