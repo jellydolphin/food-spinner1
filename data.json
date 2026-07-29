@@ -1,6 +1,205 @@
 {
-  "updated": 1785318257816,
+  "updated": 1785326902897,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 0,
-  "foods": []
+  "count": 22,
+  "foods": [
+    {
+      "id": "s1",
+      "name": "甜玉米+鸡蛋",
+      "emoji": "🌽",
+      "source": "桃园",
+      "type": "粗粮",
+      "diet": "diet",
+      "note": "桃二卖包子那里"
+    },
+    {
+      "id": "s2",
+      "name": "麦当劳穷鬼套餐",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "diet",
+      "note": "双吉+玉米杯"
+    },
+    {
+      "id": "s3",
+      "name": "赛百味",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "diet",
+      "note": ""
+    },
+    {
+      "id": "s4",
+      "name": "米国煲仔饭",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": "香香的"
+    },
+    {
+      "id": "s5",
+      "name": "奖励自己一杯奶茶",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s6",
+      "name": "袁记水饺",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s7",
+      "name": "KFC",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "normal",
+      "note": "香香的 热辣香骨鸡"
+    },
+    {
+      "id": "s8",
+      "name": "羊肉手抓饭",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": "店名：新疆手抓饭·大盘鸡，特别好吃"
+    },
+    {
+      "id": "s9",
+      "name": "法棍三明治",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "diet",
+      "note": "越师傅，烤排的比较好吃"
+    },
+    {
+      "id": "s10",
+      "name": "半吨热狗",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "normal",
+      "note": "爱吃肠的会觉得它家热狗很好吃！我爱吃它家的樟树港辣椒牛肉堡，辣辣的很多汁很好吃"
+    },
+    {
+      "id": "s11",
+      "name": "淮南牛肉汤",
+      "emoji": "🍜",
+      "source": "外卖",
+      "type": "粉",
+      "diet": "normal",
+      "note": "把饼泡在汤里巨好吃"
+    },
+    {
+      "id": "s12",
+      "name": "醉得意",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": "爱吃手撕包菜"
+    },
+    {
+      "id": "s13",
+      "name": "郑恩强麻辣烫",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": ""
+    },
+    {
+      "id": "s14",
+      "name": "小锅猪肚鸡",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": "个人喜欢胡椒味的"
+    },
+    {
+      "id": "s15",
+      "name": "桃巡巴斯克",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": "流心的"
+    },
+    {
+      "id": "s16",
+      "name": "轻线条希腊酸奶碗",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "diet",
+      "note": "可以自己DIY"
+    },
+    {
+      "id": "s17",
+      "name": "海底捞番茄滑牛肉捞饭",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "normal",
+      "note": "yummy"
+    },
+    {
+      "id": "s18",
+      "name": "圣记云吞王",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "饺子/馄饨",
+      "diet": "normal",
+      "note": "个头大但是数量有点少"
+    },
+    {
+      "id": "s19",
+      "name": "TINYZOO厚蛋烧",
+      "emoji": "🍔",
+      "source": "外卖",
+      "type": "汉堡/三明治",
+      "diet": "diet",
+      "note": "美味"
+    },
+    {
+      "id": "s20",
+      "name": "木多森健康菜",
+      "emoji": "🍚",
+      "source": "外卖",
+      "type": "饭",
+      "diet": "diet",
+      "note": "很健康的饭和菜"
+    },
+    {
+      "id": "s21",
+      "name": "私町寿司",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "normal",
+      "note": "😋"
+    },
+    {
+      "id": "s22",
+      "name": "无糖酸奶",
+      "emoji": "🍽️",
+      "source": "外卖",
+      "type": "其他",
+      "diet": "diet",
+      "note": "小象超市"
+    }
+  ]
 }
