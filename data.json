@@ -1,6 +1,25 @@
 {
-  "updated": 1786819212862,
+  "updated": 1786822046446,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 0,
-  "foods": []
+  "count": 2,
+  "foods": [
+    {
+      "id": "s1",
+      "name": "楚十一泡饭局",
+      "emoji": "🍽️",
+      "source": "财大小吃街",
+      "type": "其他",
+      "diet": "normal",
+      "note": "漂亮饭，也很好吃"
+    },
+    {
+      "id": "s2",
+      "name": "徐小双·铁锅豆花鸡",
+      "emoji": "🍽️",
+      "source": "财大小吃街",
+      "type": "其他",
+      "diet": "normal",
+      "note": "抹茶奶豆腐非常好吃"
+    }
+  ]
 }
