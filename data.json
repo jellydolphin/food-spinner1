@@ -1,7 +1,7 @@
 {
-  "updated": 1787036175550,
+  "updated": 1787039189940,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 99,
+  "count": 100,
   "foods": [
     {
       "id": "s1",
@@ -893,6 +893,15 @@
       "type": "轻食",
       "diet": "diet",
       "note": "在原来甲哺甲哺旁边 慕玛披萨原址，价格和食堂与步行街轻食相似，味道蛮不错的"
+    },
+    {
+      "id": "s101",
+      "name": "川火炎牛肉自助",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "适合两三个人去吃，牛肉非常新鲜"
     }
   ]
 }
