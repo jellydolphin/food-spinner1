@@ -320,10 +320,15 @@ canvas#wheelCanvas {
   transition: color 0.2s;
 }
 .chips-header button:active { color: var(--blue); }
+.chips-header { cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
+.chips-arrow { display: inline-block; font-size: 9px; margin-right: 5px; color: var(--text-light); transition: transform 0.2s ease; }
+.chips-section.expanded .chips-arrow { transform: rotate(90deg); }
+.chips-count { font-size: 11px; font-weight: 400; color: var(--text-light); margin-left: 3px; }
 
 
 
 .chips-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips-grid.collapsed { display: none; }
 
 
 
@@ -434,6 +439,15 @@ canvas#wheelCanvas {
   box-shadow: 0 4px 16px rgba(123,156,224,0.3);
 }
 .btn-confirm:active { opacity: 0.85; transform: scale(0.97); }
+.btn-skip {
+  width: 100%; margin-top: 16px; padding: 12px;
+  border: none; border-radius: var(--radius-sm);
+  background: rgba(226,146,168,0.14); color: #E292A8;
+  font-size: 13px; font-weight: 600; font-family: inherit;
+  letter-spacing: 0.5px; cursor: pointer;
+  transition: background 0.2s, transform 0.12s;
+}
+.btn-skip:active { background: rgba(226,146,168,0.24); transform: scale(0.97); }
 
 
 
@@ -554,11 +568,11 @@ canvas#wheelCanvas {
 
 <!-- ===== CHIPS ===== -->
 <div class="chips-section" id="chipsSection">
-  <div class="chips-header">
-    <h2>可选选项</h2>
-    <button onclick="resetExcluded()">恢复全部</button>
+  <div class="chips-header" onclick="toggleChips()">
+    <h2><span class="chips-arrow" id="chipsArrow">▶</span>可选选项<span class="chips-count" id="chipsCount"></span></h2>
+    <button onclick="event.stopPropagation();resetExcluded()">恢复全部</button>
   </div>
-  <div class="chips-grid" id="chipsGrid"></div>
+  <div class="chips-grid collapsed" id="chipsGrid"></div>
 </div>
 
 
@@ -584,6 +598,7 @@ canvas#wheelCanvas {
     <div class="result-meta" id="resultMeta"></div>
     <div id="resultTags"></div>
     <p class="result-note hidden" id="resultNote" style="font-size:12px;color:var(--text-mid);line-height:1.6;background:rgba(255,255,255,0.5);border-radius:10px;padding:10px 14px;margin-top:12px;text-align:left;"></p>
+    <button class="btn-skip" onclick="excludeAndRespin()">🚫 暂时不想吃这个</button>
     <div class="btn-row">
       <button class="btn-retry" onclick="closeResult()">再转一次</button>
       <button class="btn-confirm" onclick="confirmResult()">就吃这个</button>
@@ -674,6 +689,7 @@ let filterDiet = 'normal';
 let filterSources = new Set();  // initialised in init()
 let filterTypes = new Set();    // initialised in init()
 let excludedIds = new Set();
+let currentResultFood = null;
 let rotation = 0;
 let spinning = false;
 let animFrame = null;
@@ -899,6 +915,8 @@ function renderSummary() {
 
 function renderChips() {
   const filtered = getFiltered();
+  const cnt = document.getElementById('chipsCount');
+  if (cnt) cnt.textContent = '（' + filtered.length + '）';
   document.getElementById('chipsGrid').innerHTML = filtered.map(f => {
     const isEx = excludedIds.has(f.id);
     return `<div class="chip${isEx?' excluded':''}" onclick="toggleExclude('${f.id}')">
@@ -978,6 +996,27 @@ function toggleExclude(id) { if(spinning) return;
   renderSummary();
 }
 function resetExcluded() { if(spinning) return; excludedIds.clear(); refreshAll(); }
+function toggleChips() {
+  const sec = document.getElementById('chipsSection');
+  const expanded = sec.classList.toggle('expanded');
+  document.getElementById('chipsGrid').classList.toggle('collapsed', !expanded);
+  const arrow = document.getElementById('chipsArrow');
+  if (arrow) arrow.textContent = expanded ? '▼' : '▶';
+}
+function excludeAndRespin() {
+  if (!currentResultFood) return;
+  const food = currentResultFood;
+  const remaining = getActive().filter(f => f.id !== food.id);
+  if (remaining.length < 2) {
+    showToast('就剩这 ' + remaining.length + ' 个能转了，没法再换 😅');
+    return;
+  }
+  excludedIds.add(food.id);
+  closeResult();
+  refreshAll();
+  showToast('已暂时排除：' + food.name);
+  setTimeout(() => startSpin(), 350);
+}
 function refreshAll() { renderFilters(); renderSummary(); }
 
 
@@ -1031,6 +1070,7 @@ function startSpin() {
 
 // ==================== RESULT ====================
 function showResult(food) {
+  currentResultFood = food;
   document.getElementById('resultEmoji').textContent = food.emoji;
   document.getElementById('resultName').textContent = food.name;
   document.getElementById('resultMeta').textContent = food.source + ' · ' + food.type;
