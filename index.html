@@ -7,6 +7,8 @@
 <style>
 @import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap');
 
+
+
 :root {
   --blue:   #7B9CE0;
   --pink:   #E292A8;
@@ -22,7 +24,11 @@
   --radius-sm:   12px;
 }
 
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -44,6 +50,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 /* Decorative floating blobs */
 body::before {
   content: '';
@@ -60,6 +68,8 @@ body::after {
   border-radius: 50%; pointer-events: none; z-index: 0;
 }
 
+
+
 /* ===== Glass Card Mixin ===== */
 .glass {
   background: rgba(255,255,255,0.58);
@@ -72,6 +82,8 @@ body::after {
     inset 0 1px 0 rgba(255,255,255,0.7);
 }
 
+
+
 .glass-heavy {
   background: rgba(255,255,255,0.72);
   backdrop-filter: blur(30px) saturate(150%);
@@ -82,6 +94,8 @@ body::after {
     0 2px 8px rgba(120,130,170,0.06),
     inset 0 1px 1px rgba(255,255,255,0.8);
 }
+
+
 
 /* ===== Header ===== */
 .header {
@@ -103,6 +117,8 @@ body::after {
   margin-top: 4px; letter-spacing: 1px;
 }
 
+
+
 /* ===== Filter Card ===== */
 .filter-card {
   margin: 16px 16px 12px;
@@ -110,6 +126,8 @@ body::after {
   border-radius: var(--radius-lg);
   position: relative; z-index: 1;
 }
+
+
 
 .filter-step { margin-bottom: 14px; position: relative; }
 .filter-step:last-child { margin-bottom: 0; }
@@ -143,6 +161,8 @@ body::after {
 }
 .filter-pills { display: flex; flex-wrap: wrap; gap: 8px; }
 
+
+
 .filter-pill {
   padding: 9px 18px; border-radius: 22px;
   font-size: 13px; font-weight: 500;
@@ -156,6 +176,8 @@ body::after {
 }
 .filter-pill:active { transform: scale(0.95); }
 
+
+
 .filter-pill.selected {
   background: linear-gradient(135deg, rgba(123,156,224,0.85), rgba(184,146,208,0.85));
   color: #fff;
@@ -164,6 +186,8 @@ body::after {
   box-shadow: 0 4px 16px rgba(123,156,224,0.25);
 }
 .filter-pill.selected::after { display: none; }
+
+
 
 /* ===== Filter Summary ===== */
 .filter-summary {
@@ -194,6 +218,8 @@ body::after {
 }
 .filter-summary .reset-link:active { color: var(--blue); }
 
+
+
 /* ===== Wheel ===== */
 .wheel-section {
   position: relative;
@@ -205,6 +231,8 @@ body::after {
   position: relative;
   width: 300px; height: 300px;
 }
+
+
 
 /* Glass circle under canvas */
 .wheel-glass {
@@ -221,10 +249,14 @@ body::after {
     inset 0 1px 2px rgba(255,255,255,0.8);
 }
 
+
+
 canvas#wheelCanvas {
   position: absolute; top: 0; left: 0;
   width: 300px; height: 300px;
 }
+
+
 
 /* Pointer */
 .pointer {
@@ -238,6 +270,8 @@ canvas#wheelCanvas {
   border-top: 22px solid var(--text);
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
 }
+
+
 
 /* Center button */
 .center-btn {
@@ -266,6 +300,8 @@ canvas#wheelCanvas {
   opacity: 0.5;
 }
 
+
+
 /* ===== Chips ===== */
 .chips-section { padding: 0 16px; position: relative; z-index: 1; }
 .chips-header {
@@ -285,7 +321,11 @@ canvas#wheelCanvas {
 }
 .chips-header button:active { color: var(--blue); }
 
+
+
 .chips-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+
+
 
 .chip {
   display: flex; align-items: center; gap: 5px;
@@ -307,6 +347,8 @@ canvas#wheelCanvas {
 .tag-canteen { background: rgba(123,156,224,0.15); color: var(--blue); }
 .tag-delivery { background: rgba(226,146,168,0.12); color: var(--pink); }
 
+
+
 .chip.excluded {
   background: rgba(255,255,255,0.2);
   color: #C8C8D0;
@@ -317,6 +359,8 @@ canvas#wheelCanvas {
 .chip.excluded .chip-tag { opacity: 0.3; }
 .chip:active { transform: scale(0.95); }
 
+
+
 /* ===== Tip ===== */
 .tip {
   text-align: center;
@@ -324,6 +368,8 @@ canvas#wheelCanvas {
   font-size: 11px; color: var(--text-light);
   position: relative; z-index: 1; letter-spacing: 0.5px;
 }
+
+
 
 /* ===== Result Overlay ===== */
 .result-overlay {
@@ -389,6 +435,8 @@ canvas#wheelCanvas {
 }
 .btn-confirm:active { opacity: 0.85; transform: scale(0.97); }
 
+
+
 /* ===== States ===== */
 .hidden { display: none !important; }
 .empty-state {
@@ -400,6 +448,8 @@ canvas#wheelCanvas {
 }
 .empty-state .big-emoji { font-size: 36px; margin-bottom: 10px; }
 
+
+
 /* Step indicator */
 .step-row { display: flex; gap: 6px; margin-bottom: 16px; }
 .step-dot {
@@ -408,6 +458,8 @@ canvas#wheelCanvas {
   transition: background 0.4s;
 }
 .step-dot.done { background: linear-gradient(90deg, var(--blue), var(--purple)); }
+
+
 
 /* Shake */
 @keyframes shake {
@@ -420,10 +472,14 @@ canvas#wheelCanvas {
 </head>
 <body>
 
+
+
 <div class="header">
   <h1>今天吃啥</h1>
   <div class="sub">先筛选 · 再转盘 · 华中农业大学</div>
 </div>
+
+
 
 <!-- ===== FILTER ===== -->
 <div class="filter-card glass-heavy" id="filterCard">
@@ -433,21 +489,29 @@ canvas#wheelCanvas {
     <div class="step-dot" id="stepDot3"></div>
   </div>
 
+
+
   <div class="filter-step">
     <div class="filter-label">饮食模式</div>
     <div class="filter-pills" id="dietPills"></div>
   </div>
+
+
 
   <div class="filter-step">
     <div class="filter-label">来源</div>
     <div class="filter-pills" id="sourcePills"></div>
   </div>
 
+
+
   <div class="filter-step">
     <div class="filter-label">种类</div>
     <div class="filter-pills" id="typePills"></div>
   </div>
 </div>
+
+
 
 <!-- ===== SUMMARY ===== -->
 <div class="filter-summary glass" id="filterSummary">
@@ -456,6 +520,8 @@ canvas#wheelCanvas {
   <span>个选项</span>
   <button class="reset-link" onclick="resetFilters()">重置</button>
 </div>
+
+
 
 <!-- ===== WHEEL ===== -->
 <div class="wheel-section" id="wheelSection">
@@ -467,6 +533,8 @@ canvas#wheelCanvas {
   </div>
 </div>
 
+
+
 <!-- ===== EMPTY / SINGLE STATES ===== -->
 <div class="empty-state hidden" id="emptyState">
   <div class="big-emoji">🤔</div>
@@ -474,11 +542,15 @@ canvas#wheelCanvas {
   <p style="font-size:12px;">试试放宽筛选条件</p>
 </div>
 
+
+
 <div class="empty-state hidden" id="singleState">
   <div class="big-emoji" id="singleEmoji"></div>
   <p style="font-weight:600;" id="singleName"></p>
   <p style="font-size:12px;">只剩这一个，不用转了</p>
 </div>
+
+
 
 <!-- ===== CHIPS ===== -->
 <div class="chips-section" id="chipsSection">
@@ -489,13 +561,19 @@ canvas#wheelCanvas {
   <div class="chips-grid" id="chipsGrid"></div>
 </div>
 
+
+
 <div class="tip" id="tipText"></div>
+
+
 
 <p style="text-align:center;font-size:10px;color:var(--text-light);padding:0 20px 20px;position:relative;z-index:1;">
   数据来源 <a href="https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2" target="_blank" style="color:var(--blue);text-decoration:none;">腾讯文档 · 我在华农今天吃什么</a>
   · <span id="syncTime">加载中…</span>
   <button onclick="manualRefresh()" style="background:none;border:none;color:var(--blue);font-size:10px;cursor:pointer;font-family:inherit;">↻ 检查更新</button>
 </p>
+
+
 
 <!-- ===== RESULT ===== -->
 <div class="result-overlay hidden" id="resultOverlay">
@@ -513,6 +591,8 @@ canvas#wheelCanvas {
   </div>
 </div>
 
+
+
 <script>
 // ==================== FOOD DATABASE ====================
 // Auto-assign emoji by type
@@ -523,6 +603,8 @@ function autoEmoji(type) {
   };
   return map[type] || '🍽️';
 }
+
+
 
 const ALL_FOODS = [
   { id:'a1',name:'甜玉米+鸡蛋', emoji:'🌽', source:'桃园', type:'粗粮', diet:'diet', note:'桃二卖包子那里' },
@@ -560,41 +642,43 @@ const ALL_FOODS = [
   { id:'a33',name:'烤鸭卷+瘦肉丸', emoji:'🥬', source:'步行街', type:'无主食', diet:'normal', note:'' },
 ];
 
+
+
 // ==================== FILTER OPTIONS ====================
 const DIET_OPTIONS = [
   { key:'normal', label:'正常吃', icon:'🍔' },
   { key:'diet',   label:'减脂餐', icon:'🥗' },
 ];
-const SOURCE_OPTIONS = [
-  { key:'桃园', label:'桃园' },
-  { key:'荟园', label:'荟园' },
-  { key:'荟园小站', label:'荟园小站' },
-  { key:'竹苑', label:'竹苑' },
-  { key:'外卖', label:'外卖' },
-  { key:'西苑', label:'西苑' },
-  { key:'步行街', label:'步行街' },
-  { key:'橘园', label:'橘园' },
-];
-const TYPE_OPTIONS = [
-  { key:'粗粮', label:'粗粮' },
-  { key:'饭', label:'饭' },
-  { key:'轻食', label:'轻食' },
-  { key:'粉', label:'粉' },
-  { key:'面', label:'面' },
-  { key:'汉堡/三明治', label:'汉堡' },
-  { key:'无主食', label:'无主食' },
-  { key:'饼/馍', label:'饼/馍' },
-  { key:'饺子/馄饨', label:'饺子/馄饨' },
-];
+// Source & type options are generated dynamically from data
+function getSourceOptions() {
+  const seen = new Set();
+  const result = [];
+  for (const f of ALL_FOODS) {
+    if (!seen.has(f.source)) { seen.add(f.source); result.push({ key: f.source, label: f.source }); }
+  }
+  return result;
+}
+function getTypeOptions() {
+  const seen = new Set();
+  const result = [];
+  for (const f of ALL_FOODS) {
+    if (!seen.has(f.type)) { seen.add(f.type); result.push({ key: f.type, label: f.type }); }
+  }
+  return result;
+}
+
+
 
 // ==================== STATE ====================
 let filterDiet = 'normal';
-let filterSources = new Set(['桃园','荟园','荟园小站','竹苑','外卖','西苑','步行街','橘园']);
-let filterTypes = new Set(['粗粮','饭','轻食','粉','面','汉堡/三明治','无主食','饼/馍','饺子/馄饨']);
+let filterSources = new Set();  // initialised in init()
+let filterTypes = new Set();    // initialised in init()
 let excludedIds = new Set();
 let rotation = 0;
 let spinning = false;
 let animFrame = null;
+
+
 
 // ==================== FILTERING ====================
 function getFiltered() {
@@ -608,23 +692,33 @@ function getFiltered() {
 }
 function getActive() { return getFiltered().filter(f => !excludedIds.has(f.id)); }
 
+
+
 // ==================== CANVAS ====================
 const canvas = document.getElementById('wheelCanvas');
 const ctx = canvas.getContext('2d');
 const SIZE = 600, CX = SIZE / 2, CY = SIZE / 2;
 const R = 270;
 
+
+
 function drawWheel() {
   const active = getActive();
   const n = active.length;
   ctx.clearRect(0, 0, SIZE, SIZE);
 
+
+
   if (n === 0) return;
   const sa = (2 * Math.PI) / n;
+
+
 
   ctx.save();
   ctx.translate(CX, CY);
   ctx.rotate(rotation);
+
+
 
   // Alternating fills — subtle blue-pink tint per sector
   for (let i = 0; i < n; i++) {
@@ -634,6 +728,8 @@ function drawWheel() {
     ctx.moveTo(0, 0);
     ctx.arc(0, 0, R, start, end);
     ctx.closePath();
+
+
 
     if (n <= 6) {
       // Few options: slightly visible alternating
@@ -649,6 +745,8 @@ function drawWheel() {
     ctx.fill();
   }
 
+
+
   // Dividing lines
   for (let i = 0; i < n; i++) {
     const angle = i * sa - Math.PI / 2;
@@ -659,6 +757,8 @@ function drawWheel() {
     ctx.lineWidth = 1;
     ctx.stroke();
   }
+
+
 
   // Small dots at outer edge of each sector boundary
   for (let i = 0; i < n; i++) {
@@ -671,12 +771,16 @@ function drawWheel() {
     ctx.fill();
   }
 
+
+
   // Outer ring
   ctx.beginPath();
   ctx.arc(0, 0, R, 0, 2 * Math.PI);
   ctx.strokeStyle = 'rgba(255,255,255,0.45)';
   ctx.lineWidth = 2;
   ctx.stroke();
+
+
 
   // Inner ring
   ctx.beginPath();
@@ -685,24 +789,30 @@ function drawWheel() {
   ctx.lineWidth = 1;
   ctx.stroke();
 
+
+
   ctx.restore();
 }
+
+
 
 // ==================== UI ====================
 function renderFilters() {
   document.getElementById('dietPills').innerHTML = DIET_OPTIONS.map(o =>
     `<span class="filter-pill${filterDiet===o.key?' selected':''}" onclick="setDiet('${o.key}')">${o.icon} ${o.label}</span>`
   ).join('');
-  document.getElementById('sourcePills').innerHTML = SOURCE_OPTIONS.map(o =>
+  document.getElementById('sourcePills').innerHTML = getSourceOptions().map(o =>
     `<span class="filter-pill${filterSources.has(o.key)?' selected':''}" onclick="toggleSource('${o.key}')">${o.label}</span>`
   ).join('');
-  document.getElementById('typePills').innerHTML = TYPE_OPTIONS.map(o =>
+  document.getElementById('typePills').innerHTML = getTypeOptions().map(o =>
     `<span class="filter-pill${filterTypes.has(o.key)?' selected':''}" onclick="toggleType('${o.key}')">${o.label}</span>`
   ).join('');
   document.getElementById('stepDot2').classList.toggle('done', filterSources.size > 0);
   document.getElementById('stepDot3').classList.toggle('done', filterTypes.size > 0);
   updateSelectAllButtons();
 }
+
+
 
 function updateSelectAllButtons() {
   // Source button
@@ -720,9 +830,11 @@ function updateSelectAllButtons() {
     header.appendChild(srcBtn);
     srcBtn.onclick = toggleAllSources;
   }
-  const allSrc = filterSources.size === SOURCE_OPTIONS.length;
+  const srcOpts = getSourceOptions(); const allSrc = filterSources.size === srcOpts.length;
   srcBtn.textContent = allSrc ? '取消' : '全选';
   srcBtn.classList.toggle('all-active', allSrc);
+
+
 
   // Type button
   let typeBtn = document.getElementById('typeSelectAll');
@@ -739,20 +851,26 @@ function updateSelectAllButtons() {
     header.appendChild(typeBtn);
     typeBtn.onclick = toggleAllTypes;
   }
-  const allType = filterTypes.size === TYPE_OPTIONS.length;
+  const typeOpts = getTypeOptions(); const allType = filterTypes.size === typeOpts.length;
   typeBtn.textContent = allType ? '取消' : '全选';
   typeBtn.classList.toggle('all-active', allType);
 }
+
+
 
 function renderSummary() {
   const filtered = getFiltered();
   const active = getActive();
   document.getElementById('filterCount').textContent = active.length;
 
+
+
   const wheelS = document.getElementById('wheelSection');
   const emptyS = document.getElementById('emptyState');
   const singleS = document.getElementById('singleState');
   const chipsS = document.getElementById('chipsSection');
+
+
 
   if (filtered.length === 0) {
     wheelS.classList.add('hidden'); emptyS.classList.remove('hidden');
@@ -772,8 +890,12 @@ function renderSummary() {
     singleS.classList.add('hidden'); chipsS.classList.remove('hidden');
   }
 
+
+
   renderChips(); updateTip(); drawWheel();
 }
+
+
 
 function renderChips() {
   const filtered = getFiltered();
@@ -786,6 +908,8 @@ function renderChips() {
   }).join('');
 }
 
+
+
 function updateTip() {
   const active = getActive();
   const tip = document.getElementById('tipText');
@@ -794,6 +918,8 @@ function updateTip() {
     ? '点击选项剔除不想要的，然后转盘决定'
     : `已剔除 ${excludedIds.size} 个，剩余 ${active.length} 个可选`;
 }
+
+
 
 // ==================== ACTIONS ====================
 function setDiet(k) { filterDiet = k; excludedIds.clear(); refreshAll(); }
@@ -808,29 +934,31 @@ function toggleType(k) {
   excludedIds.clear(); refreshAll();
 }
 function resetFilters() { if(spinning) return;
-  filterDiet='normal'; filterSources=new Set(['桃园','荟园','荟园小站','竹苑','外卖','西苑','步行街','橘园']);
-  filterTypes=new Set(['粗粮','饭','轻食','粉','面','汉堡/三明治','无主食','饼/馍','饺子/馄饨']);
+  filterDiet='normal'; filterSources=new Set(getSourceOptions().map(o=>o.key));
+  filterTypes=new Set(getTypeOptions().map(o=>o.key));
   excludedIds.clear(); refreshAll();
 }
 function toggleAllSources() { if(spinning) return;
-  if (filterSources.size === SOURCE_OPTIONS.length) {
+  const srcOpts2 = getSourceOptions();
+  if (filterSources.size === srcOpts2.length) {
     // Cancel all → keep only the first one
     filterSources.clear();
-    filterSources.add(SOURCE_OPTIONS[0].key);
+    filterSources.add(getSourceOptions()[0].key);
   } else {
     // Select all
-    SOURCE_OPTIONS.forEach(o => filterSources.add(o.key));
+    getSourceOptions().forEach(o => filterSources.add(o.key));
   }
   excludedIds.clear(); refreshAll();
 }
 function toggleAllTypes() { if(spinning) return;
-  if (filterTypes.size === TYPE_OPTIONS.length) {
+  const typeOpts2 = getTypeOptions();
+  if (filterTypes.size === typeOpts2.length) {
     // Cancel all → keep only the first one
     filterTypes.clear();
-    filterTypes.add(TYPE_OPTIONS[0].key);
+    filterTypes.add(getTypeOptions()[0].key);
   } else {
     // Select all
-    TYPE_OPTIONS.forEach(o => filterTypes.add(o.key));
+    getTypeOptions().forEach(o => filterTypes.add(o.key));
   }
   excludedIds.clear(); refreshAll();
 }
@@ -852,6 +980,8 @@ function toggleExclude(id) { if(spinning) return;
 function resetExcluded() { if(spinning) return; excludedIds.clear(); refreshAll(); }
 function refreshAll() { renderFilters(); renderSummary(); }
 
+
+
 // ==================== SPIN ====================
 function startSpin() {
   if (spinning) return;
@@ -860,6 +990,8 @@ function startSpin() {
   spinning = true;
   const btn = document.getElementById('spinBtn');
   btn.disabled = true; btn.textContent = '···';
+
+
 
   const winIdx = Math.floor(Math.random() * active.length);
   const n = active.length;
@@ -872,9 +1004,13 @@ function startSpin() {
   const spins = (3 + Math.floor(Math.random() * 2)) * 2 * Math.PI;
   const target = rotation + spins + adj;
 
+
+
   const sr = rotation;
   const st = performance.now();
   const dur = 1500;
+
+
 
   function anim(now) {
     const t = Math.min(1, (now - st) / dur);
@@ -890,6 +1026,8 @@ function startSpin() {
   }
   animFrame = requestAnimationFrame(anim);
 }
+
+
 
 // ==================== RESULT ====================
 function showResult(food) {
@@ -918,15 +1056,21 @@ function confirmResult() {
   document.getElementById('resultOverlay').classList.add('hidden');
 }
 
+
+
 // ==================== DATA SYNC ====================
 const SHEET_URL = 'https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2';
 const SYNC_INTERVAL = 5 * 60 * 1000; // 5 minutes
 let lastSyncTime = null;
 
+
+
 function formatTime(ts) {
   const d = new Date(ts);
   return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
 }
+
+
 
 async function checkForUpdates() {
   try {
@@ -942,6 +1086,9 @@ async function checkForUpdates() {
         newFoods.forEach(f => ALL_FOODS.push(f));
         lastSyncTime = json.updated;
         excludedIds.clear();
+        // Re-init filters to include any new sources/types
+        filterSources = new Set(getSourceOptions().map(o => o.key));
+        filterTypes = new Set(getTypeOptions().map(o => o.key));
         refreshAll();
         showToast(`已更新 ${newFoods.length} 条菜品数据`);
         console.log('Data synced at', formatTime(lastSyncTime));
@@ -957,6 +1104,8 @@ async function checkForUpdates() {
     : '使用离线数据';
 }
 
+
+
 function manualRefresh() {
   document.getElementById('syncTime').textContent = '检查中…';
   checkForUpdates().then(() => {
@@ -966,6 +1115,8 @@ function manualRefresh() {
     }
   });
 }
+
+
 
 // Toast notification
 function showToast(msg) {
@@ -981,11 +1132,17 @@ function showToast(msg) {
   setTimeout(() => { toast.style.opacity = '0'; }, 2500);
 }
 
+
+
 // Poll for updates every hour
 setInterval(checkForUpdates, SYNC_INTERVAL);
 
+
+
 // ==================== INIT ====================
 function init() {
+  filterSources = new Set(getSourceOptions().map(o => o.key));
+  filterTypes = new Set(getTypeOptions().map(o => o.key));
   renderFilters();
   renderSummary();
   drawWheel();
@@ -995,3 +1152,4 @@ init();
 </script>
 </body>
 </html>
+
