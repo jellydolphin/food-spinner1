@@ -1,7 +1,7 @@
 {
-  "updated": 1791771259078,
+  "updated": 1791801356551,
   "source": "https://docs.qq.com/sheet/DUEVoZ1ZJRHpVS0Vw?tab=BB08J2",
-  "count": 35,
+  "count": 36,
   "foods": [
     {
       "id": "s1",
@@ -317,6 +317,15 @@
       "type": "饭",
       "diet": "normal",
       "note": "适合两三个人去吃，牛肉非常新鲜"
+    },
+    {
+      "id": "s36",
+      "name": "泰国打抛饭",
+      "emoji": "🍚",
+      "source": "步行街",
+      "type": "饭",
+      "diet": "normal",
+      "note": "梧桐广场2楼，味道不错"
     }
   ]
 }
